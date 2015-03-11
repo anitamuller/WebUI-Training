@@ -1,0 +1,47 @@
+.menu{
+	background-color: rgb(150, 255, 253);
+	border: 2px solid rgb(2, 2, 254);
+	color: rgb(254, 146, 2);
+	display: inline-block;
+	padding: 5px 2px 5px 2px;
+}
+
+ul {
+	list-style: none;
+}
+
+.dropDown1 li, .dropDown2 li{
+	margin-left: -34px;
+	color: rgb(170, 88, 84);
+	text-decoration: underline;
+
+}
+
+div {
+	display: none;
+	position: absolute;
+	top: 30px;
+}
+
+.dropDown1{
+	position: absolute;
+	top: 170px;
+	left:3px;
+	border: 2px solid black;
+	width: 23px;
+	background-color: rgb(252, 252, 3);
+	
+
+}
+
+.dropDown2{
+	position: absolute;
+	top: 170px;
+	border: 2px solid black;
+	width: 25px;
+	left: 80px;
+	background-color: rgb(252, 252, 3);
+	
+}
+
+

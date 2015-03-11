@@ -1,0 +1,14 @@
+#smallestDiv {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border: 1px solid aquamarine;
+    position: absolute;
+
+}
+
+#biggerDiv {
+    height: 800px;
+    width: 500px;
+    
+}

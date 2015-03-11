@@ -1,0 +1,53 @@
+/* Text and img fruits */
+.titleFruits{
+	font-weight: bold;
+	font-style: italic;
+	font-size: 22px;
+	text-align: center;
+}
+.contentFruit{
+	width: 200px;
+}
+img{
+	position: absolute;
+	/* float: right; */
+	margin-left: 200px;
+}
+.divFrutas {
+	max-width: 30%;
+}
+
+/* Table rowspan - colspan */
+table{
+	table-layout: fixed;
+}
+table, th, td {
+    border: 1px ridge rgb(202, 202, 208);
+    text-align: center;
+}
+.divTabla{
+	max-width: 30%;
+	margin-top: 100px;
+	font-size: 18px;
+}
+
+/* Labels and inputs */
+.divInputs{
+	margin-top: 100px;
+	font-size: 18px;
+}
+.btnSubmit{
+	margin-top: 5px;
+}
+.unacol{
+	width:40px;
+}
+.doscols{
+	width: 80px;
+}
+.trescols{
+	width: 120px;
+}
+.cuatrocols{
+	width: 160px;
+}

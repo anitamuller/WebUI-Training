@@ -1,0 +1,47 @@
+body{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+table{
+	border: 1px solid rgb(205, 195, 195);
+}
+table, th, td {
+	table-layout: fixed;
+	border-collapse: collapse;
+	padding: 5px;
+	padding-right: 25px;
+}
+
+th, td {
+	border-left: 1px solid rgb(205, 195, 195);
+	border-right: 1px solid rgb(205, 195, 195);
+}
+
+tr.gray{
+	background-color: rgb(236, 236, 216);
+}
+
+tr.header{
+	/*background-color:rgb(82, 181, 6);*/
+	background: -moz-linear-gradient(top,  #8CEA44 0%,#56A41A 40%,#58A51D 100%);
+    background: -o-linear-gradient(top, #8CEA44 0%,#56A41A 40%,#58A51D 100%);
+    background: -ms-linear-gradient(top,  #8CEA44 0%,#56A41A 40%,#58A51D 100%);
+    background: linear-gradient(to bottom, #8CEA44 0%,#56A41A 40%,#58A51D 100%);
+	color:white;
+	border-bottom:1px solid gray;
+	border-right: 1px solid gray; 
+	border-left:1px solid gray;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.borderBlack{
+	border-bottom:1px solid gray;
+	border-right: 1px solid gray; 
+	border-left:1px solid gray;
+}
+
+input{
+	margin-left: 10px;
+}

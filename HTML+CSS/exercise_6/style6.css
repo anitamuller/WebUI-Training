@@ -1,0 +1,43 @@
+body{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	
+}
+tr{
+	height: 25px;
+}
+
+#ticket{
+	background-color: rgb(89, 89, 89);
+	border: 10px solid rgb(48, 48, 48);
+	padding: 10px;
+	max-width: 400px;
+}
+
+#numTicket{
+	color: rgb(153, 153, 153);
+	font-size: 25px;
+	margin-top: -5px;
+}
+.izq {
+	color:white;
+	font-style: italic;
+	padding-right: 30px;
+}
+
+.yellow{
+	color:rgb(245, 235, 174);
+}
+
+.noactive{
+	font-weight: bold;
+	color: red;
+}
+
+.gray{
+	color: rgb(153, 153, 153);
+}
+
+.orange{
+	font-weight: bold;
+	color:rgb(217, 103, 60);
+}

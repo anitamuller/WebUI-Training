@@ -1,0 +1,13 @@
+body{
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+.a {
+    list-style-type: circle;
+}
+.b {
+    list-style-type: square;
+}
+.c {
+    list-style-type: disc;
+}
+

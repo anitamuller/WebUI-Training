@@ -1,0 +1,58 @@
+Se propusieron 3 herramientas para resolver el ejercicio de Herencia en JS:
+1) PseudoClassical-Inheritance
+2) Prototypal-Inheritance
+3) Parasitic-Inheritance
+
+1) Con esta forma pude representar el modelo de forma casi-completa. Pude representar las unidades de Propulsión, 
+entre ellas Wheel, PropellerNozzle, Propeller cuyas funciones constructor tienen como prototipo PropulsionUnit. 
+De la misma forma empecé con los Vehículos. Implementé la función constructor Vehicle y luego asocié como prototype 
+de las funciones constructor AirVehicle, WaterVehicle y LandVehicle a dicha clase Vehicle. El problema se presentó
+al intentar definir la función constructor para los AmphibiousVehicle, y querer asociar a su prototipo dos clases:
+LandVehicle y WaterVehicle. Con ayuda de Federico, el me sugirió hacer algo como:
+- AmphibiousVehicle.prototype = {vehicle: new Vehicle() , water: new WaterVehicle(), land: new LandVehicle()};
+
+Sin embargo como se explica en el código de PseudoClassical-Inheritance.js no pude completar el ejercicio extendiendo 
+el método changeSpinDirection de WaterVehicle a AmphibiousVehicle. 
+
+Es por esto último que decidí descartar esta opción para resolver el ejercicio e intentar con las dos siguientes. 
+De todas formas, es importante decir que hasta ese punto pude modelar correctamente y como necesitaba el sistema 
+propuesto. Pude crear instancias de las unidades de propulsión así de como de todos los tipos de vehículos, 
+excepto el Anfibio.
+
+2) Como sabemos Prototypal-Inheritance propone pseudo-herencia entre objetos. Se busca lograr relaciones padre-hijos
+entre objetos en particular. De forma que no me pareció oportuna esta forma para representar el diagrama del ejercicio
+teniendo en cuenta que se necesita crear varias instancias de cada clase y para esto se necesitaría duplicar información
+en cada objeto. Supongamos el contexto de crear 4 instancias de tipo Wheel (unidad de propulsión) para luego
+crear un LandVehicle. Para esto sería necesario crear cuatro objetos que tengan definido dentro el método 
+getAcceleration() para lograr la lógica propuesta. Sí podríamos lograr var wheel = object(propulsionUnit), pero luego 
+habría que setear el radio y el método getAcceleration() para cada una de las ruedas. Por lo que el código resultaría
+bastante complejo y poco intuitivo, dejando de lado entonces esta otra opción.
+
+3) No por ser la última, menos importante. Al contrario encontré en esta forma de resolver la herencia la solución 
+al ejercicio planteado. A mi criterio, Parasitic-Inheritance puede considerarse la mejor forma de representar herencia 
+entre objetos en JS. Es más simple que las anteriores y por sobretodo, más clara e intuitiva. Sólo se trata de retornar 
+el objeto en el caso de que se trate de una clase padre y de retornar un nuevo objeto construido a partir de las 
+propiedades del padre incluidas y las nuevas en caso de ser hijo. Es decir, siempre aplicando los 3 pasos: 
+crear el objeto, extenderlo y luego retornarlo. 
+
+Luego de implementar el ejercicio de vehículos se debe reconocer que puede verse de forma muy simple la estructura de 
+cada objeto en cada función constructor.
+
+OBSERVACIONES:
+- Adjunto diagrama de clases Vehicles-Inheritance.pdf para mostrar el diagrama de clases propuesto. Cabe aclarar que la 
+herencia mútliple planteada en el diseño del problema fue implementada de la forma que me pareció mas clara, pero es 
+cierto que es muy difícil lograr "exactamente" esa múltiple-herencia planteada entre las clases.
+Para representar que un AmphibiousVehicle extiende de LandVehicle y WaterVehicle se instancias de cada una de ambas clases
+y se retornan de forma que luego desde afuera se manejan como corresponde para lograr el comportamiento deseado.
+(En el archivo Parastic_Inheritance_private.js se decidió no implementar la clase PropulsionUnits y directamente trabajar 
+como objetos a todas las unidades de Propulsión).
+
+- Agrego que el modelo podría haber sido implementado de muchísimas formas, es por esto que decidí implementarlo de varias formas:
+1) Parasitic_Inheritance.js se implementó utilizando propiedades y métodos públicos
+2) Parasitic_Inheritance_private.js se implementó utilizando variables privadas (con setters y getters) y los métodos necesarios
+públicos
+3) Parasitic_Inheritance_version2.js propone lo mismo representado en Parasitic_Inheritance.js pero eliminando el uso innecesario
+del operador new.
+
+- No se agregaron controles de validación al momento de la creación de nuevos objetos. Como dije todo podría mejorarse.
+

@@ -1,0 +1,42 @@
+.box {
+	display: inline-block;
+}
+#list-nav {
+	font-family: Verdana;
+	font-size: 15px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+ul#list-nav li a {
+	background: linear-gradient(rgb(226, 226, 226) 0%, rgb(219, 219, 219) 50%, rgb(209, 209, 209) 51%, rgb(254, 254, 254) 100%);
+	vertical-align: middle;
+	list-style: none;
+	border: 1px solid black; 
+	padding: 10 20px 20px;
+	color: black;
+	width: 90%;
+	padding: 10px 10px 10px 10px;
+}
+.navbar{
+	border-top: 10px solid rgb(10, 119, 213);
+	border-bottom: 10px solid rgb(10, 119, 213);
+	border-left: 10px solid rgb(10, 119, 213);
+	border-right: 10px solid rgb(10, 119, 213);
+	text-align: center;
+	max-width: 38%;
+}
+#list-nav li a {
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	color: #069;
+	
+}
+#list-nav li a:hover {
+	background: linear-gradient(rgb(208, 228, 247) 0%, rgb(115, 177, 231) 24%, rgb(10, 119, 213) 50%, rgb(83, 159, 225) 79%, rgb(135, 188, 234) 100%);
+	color: white;
+}
+.item1{
+	margin-left: -5px;
+}

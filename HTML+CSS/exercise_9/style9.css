@@ -1,0 +1,39 @@
+body{
+	background-color: rgb(238, 238, 238);
+	font-family: Calibri;
+}
+#title{
+	margin-left: 20px;
+}
+#template{
+	border: 1px solid gray;
+	font-size: 16px;
+	margin-bottom: 50px;
+	background-color: white;
+	max-width: 500px;
+	position: relative;
+
+}
+p{
+	width: 300px;
+}
+.box {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.textImg{
+	vertical-align: top;
+	text-align: left;
+	margin-left: 20px;
+}
+.boton{
+	margin-bottom: 20px;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	margin-left: 120px;
+}
+.btnAdd{
+	margin-left: 193px;
+}

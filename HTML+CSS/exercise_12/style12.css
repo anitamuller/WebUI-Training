@@ -1,0 +1,211 @@
+body{
+	/* IE10 Consumer Preview */ 
+	background: -ms-linear-gradient(bottom, #FFFFFF 0%, #6AC182 100%);
+
+	/* Mozilla Firefox */ 
+	background: -moz-linear-gradient(bottom, #FFFFFF 0%, #6AC182 100%);
+
+	/* Opera */ 
+	background: -o-linear-gradient(bottom, #FFFFFF 0%, #6AC182 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #6AC182));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #6AC182 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background: linear-gradient(to top, #FFFFFF 0%, #6AC182 100%) no-repeat;
+	font: 11px verdana, arial, sans-serif;
+	color: #74653D;
+}
+#content {
+	text-align: left;
+	margin: auto;
+	width: 874px;
+	position: relative;
+	margin-left: 190px;
+}
+#header {
+	position: absolute;
+	left: 250px;
+}
+#menuIzq {
+	float: left;
+	width: 243px;
+}
+#logo {
+	width: 244px;
+	height: 152px;  
+	text-align: center;
+	color: #595959;
+}
+.logo{
+	max-height: 186px;
+	max-width: 243px;
+	height: 155px;
+}
+.imgDer{
+	height: 384px;
+}
+#logo h1 {
+	padding-top: 30px;
+	font: 24px "arial narrow", arial, sans-serif;
+}
+#logo p {
+	margin: 8px 25px 4px 25px;
+	border-top: 1px solid #B8B8B8;
+	border-bottom: 1px solid #B8B8B8;
+	padding: 3px;
+	letter-spacing: 0.2em;
+	font-weight: bold;
+}
+a {
+	color: green;
+}
+#navbar {
+	background-color: black;
+}
+#navbar ul {
+	margin-left: 9px;
+	padding-left: 1px;
+	padding-bottom: 29px;
+	background-color: black;
+}
+#navbar li {
+	list-style: none;
+	font: 14px "arial narrow", arial, sans-serif;
+	border-top: 1px solid #959595;
+	padding: 7px 0 0 31px;
+}
+#navbar a {
+	color: #fff;
+	text-decoration: none;
+	padding-left: 10px;
+	display: block;
+	width: 90%;
+	padding: 2px 0 6px 8px;
+}
+#navbar a:hover {
+	text-decoration: underline;
+}
+#navbar .focusNavbar {
+	border: none;
+	
+}
+#navbar .focusNavbar a {
+	color: #79E9BA;
+}
+#news {
+	padding-left: 10px;
+	padding-right: 1px;
+	padding-bottom: 3px;
+	padding-top: 6px;
+	text-align: justify;
+	background-color: white;
+}
+#news h2 {
+	font-size: 12px;
+	color: #4DB54E;
+}
+#news h3, #news p {
+	font-size: 11px;
+	margin: 1em 8px 1em 0;
+}
+#news a {
+	color: #1B9346;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#news a:hover {
+	color: #38301A;
+}
+#news .more {
+	font-size: 9px;
+}
+#call {
+	color: #4F744B;
+	text-align: center;
+}
+#call p {
+	margin: 0.7em 2.6em;
+}
+.imgCall{
+	width: 242px;
+}
+.more{
+	color: green;
+}
+#menuDer {
+	float: right;
+	padding-top: 301px;
+	margin-top: 84px;
+	width: 70%;
+	position: absolute;
+	left: 257px;
+}
+#menuDer h2 {
+	font: 18px arial, sans-serif;
+	color: #52B54E;
+	border-bottom: 1px solid #52B54E;
+	padding-bottom: 6px;
+	margin-bottom: 1em;
+}
+#menuDer h3 {
+	font: 14px arial, sans-serif;
+	color: #52B54E;
+	border-bottom: 1px solid #52B54E;
+	padding-bottom: 6px;
+	margin-bottom: 1em;
+	margin-top: 60px;
+}
+.imgWelcome{
+	height: 124px;
+	float: left;
+}
+
+#menuDer .left {
+	margin-right: 18px;
+}
+#menuDer .more {
+	font-weight: bold;
+	font-size: 10px;
+	float: right;
+}
+#perfil1, #perfil2 {
+	float: left;
+	width: 49%;
+}
+#perfil1 {
+	margin-right: 1%;
+}
+#img-1, #img-2 {
+	background: url(company1.jpg) no-repeat;
+	width: 112px;
+	height: 23px;
+	float: left;
+	margin-right: 18px;
+	text-align: center;
+	padding-top: 90px;
+	font-size: 9px;
+	font-weight: bold;
+}
+#img-2 {
+	background: url(company2.jpg) no-repeat;
+}
+#footer{
+	clear: both;
+	position: relative;
+	height: 3em;
+	background-color: rgb(120, 199, 142);
+	padding-bottom: 20px;
+	width: 876px;
+	top: 35px;
+}
+#copyright {
+	text-align: center;
+	padding: 22px 0px 30px 00px;
+	font-size: 9px;
+	color: #213524;
+	font-weight: bold;
+}

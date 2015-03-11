@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style5.css">
+</head>
+<body>
+	<FORM method="POST" action="">
+		<table BORDER=1>
+			<tr>
+				<td class="izq">Last Name</td>
+				<td><INPUT type=text name="lastname" class="der sombra"></td>
+			</tr>
+
+			<tr>
+				<td class="izq">First Name</td>
+				<td><INPUT type=text name="firstname" class="der sombra"></td>
+			</tr>
+			
+			<tr>
+				<td class="izq">Address</td>
+				<td><textarea rows="3" name="address" class="der sombra"></textarea></td>
+			</tr>
+
+			<tr>
+				<td class="izq">City</td>
+				<td><INPUT type=text name="city" class="city sombra">
+					<strong>State</strong> <INPUT type=text name="state" size="8">
+	
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">Zip/Postal Code</td>
+				<td><INPUT type="number" name="codpostal" size="6"></td>
+			</tr>
+
+			<tr>
+				<td class="izq">Country</td>
+				<td>
+					<select name="country">
+						<option VALUE="argentina">Argentina</option>
+						<option VALUE="colombia">Colombia</option>
+						<option VALUE="eeuu">EE UU</option>
+						<option VALUE="brasil">Brasil</option>
+						<option VALUE="peru">Peru</option>
+						<option VALUE="otro">Otro</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">Phone (country code, area code, number)</td>
+				<td>
+					(+<input type=text name="countrycode" size="4" class="sombra">)
+					<input type=text name="areacode" size="5" class="sombra">-
+					<input type=text name="number" size="29" class="sombra">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">E-mail</td>
+				<td><INPUT type="email" name="email" class="der sombra"></td>
+			</tr>
+
+			<tr>
+				<td class="izq">Birth date</td>
+				<td>Month <INPUT type="number" min="1" max="12" size="2" name="month" class="date sombra"> Day <INPUT type="number" min="1" max="31" name="day" size="2" class="date sombra">
+				Year (4 digit) <INPUT type="number" min="1920" max="2015" name="year" size="2" class="dateYear sombra">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">Gender</td>
+				<td>
+					<select name="gender">
+						<option VALUE="male">Male</option>
+						<option VALUE="female">Female</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">Starting date</td>
+				<td>
+					Spring 2006 <INPUT type=radio name="startdate" value="">
+					Summer 2006 <INPUT type=radio name="startdate" value="">
+				</td>
+			</tr>
+
+			<tr>
+				<td class="izq">Comments/Questions</td>
+				<td>
+					<textarea rows="7" name="comentarios" class="der sombra"></textarea>
+				</td>
+			</tr>
+
+			<tr class="footerForm"  >
+				<td colspan="2" >
+					<input name="submit" type="submit" value="Submit">
+					<input name="clear" type="reset" value="Clear This Form">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
